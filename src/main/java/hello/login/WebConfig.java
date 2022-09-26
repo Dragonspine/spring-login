@@ -39,7 +39,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-
+        // 스프링 인터셉터 흐름 : HTTP 요청 -> WAS -> 필터 -> 서블릿 -> 인터셉터1 -> 인터셉터2 -> 컨트롤러
         // 로그 인터셉터 등록
         registry.addInterceptor(new LogInterceptor())
                 .order(1)
