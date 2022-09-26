@@ -4,6 +4,7 @@ import hello.login.domain.member.Member;
 import hello.login.web.SessionConst;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -24,6 +25,7 @@ import javax.servlet.http.HttpSession;
  * 2022/09/26        kanghyun Kim      최초 생성
  */
 @Slf4j
+@Component
 public class LoginMemberArgumentResolver implements HandlerMethodArgumentResolver {
 
     // 파라미터 보고 지원여부 결정(@Login)

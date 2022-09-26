@@ -2,6 +2,7 @@ package hello.login.web.interceptor;
 
 import hello.login.web.SessionConst;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpSession;
  * 2022/09/26        kanghyun Kim      최초 생성
  */
 @Slf4j
+@Component
 public class LoginCheckInterceptor implements HandlerInterceptor {
 
     @Override
